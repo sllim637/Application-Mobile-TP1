@@ -19,6 +19,7 @@ class WelcomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
         this.txtWelcome = findViewById(R.id.textWelcome)
+        this.imgWelcome = findViewById(R.id.imageView)
         val email = intent.getStringExtra("email")
         txtWelcome.setText("Bienvenue $email")
     }
